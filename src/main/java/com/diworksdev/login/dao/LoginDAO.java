@@ -5,13 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.diworksdev.login.dto.loginDTO;
+import com.diworksdev.login.dto.LoginDTO;
 import com.diworksdev.login.util.DBConnector;
 
 public class LoginDAO {
-	public loginDTO select(String name, String password)throws SQLException{
+	public LoginDTO select(String name, String password)throws SQLException{
 		
-		loginDTO dto = new loginDTO();
+		LoginDTO dto = new LoginDTO();
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 		
